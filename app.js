@@ -46,6 +46,7 @@ function showUpgradeButton(upgrade) {
   // Create and append the upgrade button as a list item
   const upgradeButton = document.createElement("button");
   upgradeButton.id = buttonId;
+  upgradeButton.classList = "btn btn-secondary text-white";
   upgradeButton.textContent = `Upgrade (+${upgrade.increment}/click) - Cost: ${upgrade.cost} - Count: ${upgrade.count}`;
   upgradeButton.onclick = () => purchaseUpgrade(upgrade);
 
